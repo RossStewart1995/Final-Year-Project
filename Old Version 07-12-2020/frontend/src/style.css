@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #ff9034;
+    text-decoration: unset;
+}
+
+ul{
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+button,
+input,[type="submit"]{
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5, h6, p, ul, ol{
+    margin: 1em 0;
+}
+
+.poll-title{
+    margin: 0;
+}
+
+.poll-para button {
+    margin: 0;
+}
+
+.banner button{
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.banner button:hover{
+    background-color: #bb4f4f;
+}
+
+.banner button:focus{
+    outline: none;
+}
+
+/*general styles*/
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.register-page {
+    padding: 1rem;
+}
+
+.login-page {
+    padding: 1rem;
+}
+
+.poll-page {
+    padding: 1 rem;
+}
+
+/*Header*/
+#header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161616;
+}
+
+#header .title{
+    margin: 0;
+    color: #e05f5f;
+    padding: 0 1rem;
+}
+
+#header .auth-options{
+    height: 100%;
+    display: flex;
+}
+
+#header .auth-options button{
+    padding: 0 1rem;
+    color: #ffffff;
+    background-color: #161616;
+}
+
+#header .auth-options button:focus{
+    outline: none;
+}
+
+#header .auth-options button:hover{
+    background-color: #242424;
+}
+
+.display-name {
+    color: #ffffff;
+    padding-right: 100px;
+}
+
+/*Banner*/
+.banner{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #e05f5f;
+}
+
+.banner button{
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.banner button:hover{
+    background-color: #bb4f4f;
+}
+
+.banner button:focus{
+    outline: none;
+}
+
+
+
+/*Register Form*/
+.form label,
+.form input {
+    display: block;
+}
+.form input {
+    margin-bottom: 1rem
+}
+.form label{
+    margin-bottom: 0.2rem
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"]{
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    background-color: #dfdfdf;
+    font-size: 1.1rem;
+}
+
+.form input:focus {
+    border: 1px solid #e05f5f;
+    outline: none;
+    box-shadow: inset 0px 0px 5px rgba(224, 95, 95);
+}
+
+.form input[type="submit"]{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #e05f5f;
+    border-radius: 8px;
+    background-color: #e05f5f;
+    font-size: 1.1rem;
+}
+
+/*Poll Page*/
+
+.poll-pageinput {
+    display: block;
+}
+.poll-page input {
+    margin-bottom: 1rem
+}
+.poll-page input[type="text"]{
+    width: 75%;
+    padding: 0.25rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    background-color: #dfdfdf;
+    font-size: 1.1rem;
+}
+.poll-page input:focus {
+    border: 1px solid #e05f5f;
+    outline: none;
+    box-shadow: inset 0px 0px 5px rgba(224, 95, 95);
+}
+
+.poll-page input[type="submit"]{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #e05f5f;
+    border-radius: 8px;
+    background-color: #e05f5f;
+    font-size: 1.1rem;
+}
+
+.remove-input{
+    font-size: 2rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.add-input{
+    font-size: 2rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.add-input :hover{
+        background-color: #00c01a;
+}
+
+/*Error-notice*/
+.error-notice{
+    padding: 0.5rem;
+    border: 1px solid #e07c7c;
+    border-width: 2px;
+    background-color: #ffc6c6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-notice button{
+    height: 20px;
+    width: 20px;
+    color: #ffffff;
+    border: 1px solid #da3030;
+    background-color: #da3030;
+    border-radius: 3px;
+}
+
+.error-notice button:focus{
+    outline: none;
+}
+
+.error-notice button:hover{
+    background-color: #d65d5d;
+}
+
+@media screen and (max-width: 550px){
+    #header .title{
+        font-size: 1.2rem;
+    }
+    #header .auth-options button{
+        padding: 0 0.5rem;
+        font-size: 0.9 rem;
+    }
+
+}
+

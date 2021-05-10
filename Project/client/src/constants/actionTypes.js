@@ -1,0 +1,12 @@
+export const CREATE = "CREATE";
+export const UPDATE = "UPDATE";
+export const DELETE = "DELETE";
+export const FETCH_ALL = "FETCH_ALL"; 
+export const LIKE = "LIKE";
+export const AUTH = "AUTH";
+export const LOGOUT = "LOGOUT";
+export const CLEAR = "CLEAR";
+export const VOTE = "VOTE";
+export const CREATE_PETITION = "CREATE_PETITION";
+export const FETCH_ALL_PETITIONS = "FETCH_ALL_PETITIONS";
+export const SUBMIT_SIGNATURE = "SUBMIT_SIGNATURE";
